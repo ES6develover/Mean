@@ -1,0 +1,1692 @@
+<div class="wizard">
+  <div class="wizard-inner">
+    <div class="connecting-line"></div>
+    <ul class="nav nav-tabs" role="tablist">
+
+      <li role="presentation" class="active">
+        <a href="#/newCreditApp#step1" data-toggle="tab" aria-controls="step1" role="tab" title="New Application">
+          <span class="round-tab">
+            <i class="glyphicon glyphicon-file"></i>
+          </span>
+        </a>
+      </li>
+
+      <li role="presentation" class="disabled">
+        <a href="#/newCreditApp#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Address Information">
+          <span class="round-tab">
+                                <i class="glyphicon glyphicon-pencil"></i>
+                            </span>
+        </a>
+      </li>
+      <li role="presentation" class="disabled">
+        <a href="#/newCreditApp#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Supporting Documents">
+          <span class="round-tab">
+                                <i class="glyphicon glyphicon-picture"></i>
+                            </span>
+        </a>
+      </li>
+      <li role="presentation" class="disabled">
+        <a href="#/newCreditApp#step4" data-toggle="tab" aria-controls="step4" role="tab" title="Reference Contact Information">
+          <span class="round-tab">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </span>
+        </a>
+      </li>
+
+      <li role="presentation" class="disabled">
+        <a href="#/newCreditApp#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+          <span class="round-tab">
+                                <i class="glyphicon glyphicon-ok"></i>
+                            </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <form role="form">
+    <div class="tab-content">
+      <div class="tab-pane active" role="tabpanel" id="step1">
+
+        <div id="step1DivID">
+
+          <div class="panel panel-primary">
+            <div class="panel-heading clearfix"> <strong class="panel-title">Credit Application - Reference Information</strong></div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="form-group col-md-3">
+                  <label class="control-label" for="orderTypeId">Order Type</label>
+                  <select name="orderType" id="orderTypeId" class="form-control">
+                    <option value="" selected="selected"></option>
+                    <option value="N">New Customer</option>
+                    <option value="E">Existing Customer</option>
+                    <option value="C">Change of Ownersip</option>
+                  </select>
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label class="control-label" for="customerTypeId">Customer Type</label>
+                  <select name="customerType" id="customerTypeId" class="form-control">
+                    <option value="" selected="selected"></option>
+                    <option value="R">Residential (Consumer/Individual)</option>
+                    <option value="B">Business (Commerical)</option>
+                  </select>
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label class="control-label" for="customerSubTypeId">Customer Sub-Type</label>
+                  <select name="customerSubType" id="customerSubTypeId" class="form-control">
+                    <option value="" selected="selected"></option>
+                    <option value="IND">Individual</option>
+                    <option value="EMP">Employee</option>
+                    <option value="VIP">VIP</option>
+                    <option value="LVP">Liver Pool</option>
+                  </select>
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label class="control-label" for="customerCategoryId">Customer Category</label>
+                  <select name="customerCategory" id="customerCategoryId" class="form-control">
+                    <option value="" selected="selected">Select Category</option>
+                    <option value="EAM">Ex. Army</option>
+                    <option value="STU">Student</option>
+                    <option value="EMP">Employee</option>
+                    <option value="GEN">General</option>
+                    <option value="RET">Retired</option>
+                    <option value="SPE">Special Needs (Disabled)</option>
+                  </select>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-3">
+                  <label class="control-label" for="regionCodeId">Region Code</label>
+                  <select name="regionCode" id="regionCodeId" class="form-control">
+                    <option value="" selected="selected"></option>
+                    <option value="S">South</option>
+                    <option value="N">North</option>
+                    <option value="NE">North East</option>
+                    <option value="C">Central</option>
+                    <option value="PA">Pacific</option>
+                    <option value="G">Gulf</option>
+                    <option value="PE">Peninsula</option>
+                  </select>
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label class="control-label" for="salesChannelId">Sales Channel</label>
+                  <input class="form-control" name="salesChannel" id="salesChannelId" placeholder="Enter Sales Channel ID" type="text" maxlength="10">
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label class="control-label" for="storeId">Store ID</label>
+                  <input class="form-control" name="storeId" id="storeId" placeholder="Enter Store ID" type="text" maxlength="10">
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label class="control-label" for="accountNumberId">Account Number</label>
+                  <input class="form-control" name="accountNumber" id="accountNumberId" placeholder="Enter The account number of the existing account" type="text" maxlength="30">
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-3">
+                  <label class="control-label" for="dealerCodeId">Dealer Code</label>
+                  <input class="form-control" name="dealerCode" id="dealerCodeId" placeholder="Enter Dealer Code" type="text" maxlength="20">
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label class="control-label" for="dealerNameId">Dealer Name</label>
+                  <input class="form-control" name="dealerName" id="dealerNameId" placeholder="Enter Name of the Dealer" type="text" maxlength="100">
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label class="control-label" for="languageId">Language</label>
+                  <select name="language" id="languageId" class="form-control">
+                    <option value="ES" selected="selected">Spanish Mexico</option>
+                    <option value="EN">English</option>
+                  </select>
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label class="control-label" for="repId">Representative ID/ Name</label>
+                  <input class="form-control" name="repID" id="repId" value="TEST UID - Full Name" type="text" maxlength="20" disabled="disabled">
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+          <!-- end of panel -->
+
+          <div class="panel panel-primary">
+            <div class="panel-heading clearfix"> <strong class="panel-title">PRIMARY APPLICANT INFORMATION</strong></div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label class="control-label" for="firstNameId">First Name</label>
+                  <input class="form-control" name="firstName" id="firstNameId" placeholder="Enter First Name" type="text" maxlength="26">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label class="control-label" for="middleNameId">Middle Name</label>
+                  <input class="form-control" name="middleName" id="middleNameId" placeholder="Enter Middle Name" type="text" maxlength="26">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label class="control-label" id="lastName">First Legal Last Name</label>
+                  <input class="form-control" name="lastName" placeholder="Enter First Legal Last Name" type="text" maxlength="26">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label class="control-label" for="secondLastNameId">Second Legal Last Name</label>
+                  <input class="form-control" name="secondLastName" id="secondLastNameId" placeholder="Enter Second Legal Last Name" type="text" maxlength="26">
+                </div>
+
+              </div>
+
+              <div class="row">
+
+                <div class="form-group col-md-2">
+                  <label class="control-label" for="dobPickerId">Date of Birth</label>
+                  <!-- <input type="tel" class="form-control" name="dob" id="dobId" value="" placeholder="DDMMYYYY">              -->
+                  <!-- <div class="form-inline">
+			  <div class="form-group">
+                <input type="text" id="txt_day" name="txt_day" class="form-control input-sm" style="width:60px"  placeholder="DD" required maxlength="2" data-validation-required-message="Day is required" >
+              </div>
+              <div class="form-group">
+                <input type="text" id="txt_month" name="txt_month" class="form-control input-sm" style="width:60px"  placeholder="MM" required maxlength="2" data-validation-required-message="Month is required" >
+              </div>
+			  <div class="form-group">
+			    <input type="text" id="txt_year" name="txt_year" class="form-control input-sm" style="width:120px"  placeholder="YYYY" required maxlength="4" data-validation-required-message="Year is required" >
+              </div>
+            </div> -->
+                  <div class='input-group date' id='dobPickerDivId'>
+                    <input type='text' class="form-control" name="dobDate" id="dobDateID" placeholder="DDMMYYYY" />
+                    <label class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span></label>
+                  </div>
+                </div>
+
+                <div class="form-group col-md-2">
+                  <label class="control-label" for="genderId">Gender</label>
+                  <div class="input-group" id="genderId">
+                    <div id="radioBtn" class="btn-group">
+                      <a class="btn btn-default" data-toggle="gender" data-title="F"> Female </a>
+                      <a class="btn btn-default" data-toggle="gender" data-title="M"> Male </a>
+                    </div>
+                    <input type="hidden" name="gender" id="gender">
+                  </div>
+                </div>
+
+                <div class="form-group col-md-4">
+                  <label class="control-label" for="rfcId">RFC</label>
+                  <input class="form-control" name="rfc" id="rfcId" placeholder="Enter Registro Federal del Contribuyente" type="text">
+                  <!-- <span class="help-block">RFC is always needed to create a new postpaid account.</span> -->
+                </div>
+
+                <div class="form-group col-md-4">
+                  <label class="control-label" for="curpId">CURP</label>
+                  <input type="text" class="form-control" name="curp" id="curpId" value="" placeholder="Enter Clave Única de Registro de Población">
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label class="control-label" for="comEmpNameId">Company (Employer) Name</label>
+                  <input type="text" class="form-control" name="comEmpName" id="comEmpNameId" value="" placeholder="The full name of the company" maxlength="50">
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label class="control-label" for="monthlyIncomeLevelId">Monthly Income Level</label>
+                  <select name="monthlyIncomeLevel" id="monthlyIncomeLevelId" class="form-control">
+                    <option value="">Select Income Level</option>
+                    <option value="0">No Income</option>
+                    <option value="1" selected="selected">0-4,990</option>
+                    <option value="2">5,000-7,999</option>
+                    <option value="3">8,000-14,999</option>
+                    <option value="4">15,000-29,999</option>
+                    <option value="5">30,000-49,999</option>
+                    <option value="6">50,000-99,999</option>
+                    <option value="7">100,000 or above</option>
+                  </select>
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label class="control-label" for="autopayEnrollementIndicatorId" title="Do you want auto-pay?">Auto-pay?</label>
+                  <div class="input-group" id="autoPayIndId">
+                    <div id="radioBtn" class="btn-group">
+                      <a class="btn btn-default" data-toggle="autoPayInd" data-title="Y" title="Yes, customer enrolled to auto-pay"> Yes </a>
+                      <a class="btn btn-default" data-toggle="autoPayInd" data-title="N" title="No Auto-pay enrollment"> No </a>
+                    </div>
+                    <input type="hidden" name="autopayEnrollementIndicator" id="autopayEnrollementIndicator">
+                  </div>
+                </div>
+
+              </div>
+
+              <!--
+              <div class="row">
+
+                <div class="form-group col-md-6">
+                  <label class="control-label" for="contactPhoneId">Phone Number</label>
+                  <div class="control-group">
+                    <div class="controls">
+                      <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                        <input type="tel" class="form-control" name="contactPhone" id="contactPhoneId" placeholder="Enter Contact phone number">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label class="control-label" for="emailId">Email Address</label>
+                  <div class="control-group">
+                    <div class="controls">
+                      <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input type="email" class="form-control" name="emailAddress" id="emailId" placeholder="Enter Contact email address">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div> -->
+
+            </div>
+            <!-- end of panel-body -->
+          </div>
+          <!-- end of panel -->
+
+        </div>
+
+        <ul class="list-inline pull-right">
+          <li><a href="#/home" class="btn btn-default">Cancel</a></li>
+          <li>
+            <button type="button" class="btn btn-primary next-step">Save and continue</button>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="tab-pane" role="tabpanel" id="step2">
+
+        <div id="step2CreditAppDivId">
+
+          <!-- Address Data -- information -->
+
+          <div class="panel panel-primary">
+            <div class="panel-heading clearfix"> <strong class="panel-title">ADDRESS DETAILS - SERVICE ADDRESS</strong></div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-12">
+
+                  <div class="row">
+                    <div class="form-group col-md-12">
+                      <label class="control-label" for="addressLine1Id">Address Line 1<span class="boldred">*</span></label>
+                      <input type="text" class="form-control" name="addressLine1" placeholder="Address Line 1" maxlength="100" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="addressLine1Id" />
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label class="control-label" for="extStNumId">External Street Number<span class="boldred">*</span></label>
+                      <input type="text" class="form-control" name="extStNum" maxlength="25" placeholder="Building Number" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="extStNumId" />
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label class="control-label" for="intStNumId">Internal Street Number</label>
+                      <input type="text" class="form-control" name="intStNum" maxlength="25" placeholder="Apartment, Suite Numbers" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="intStNumId" />
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="form-group col-md-12">
+                      <label class="control-label" for="addressLine2Id">Address Line 2</label>
+                      <input type="text" class="form-control" name="addressLine2" maxlength="40" placeholder="Address Line 2" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="addressLine2Id" />
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label class="control-label" for="municipalityId">Municipality<span class="boldred">*</span></label>
+                      <input type="text" class="form-control" name="municipality" maxlength="40" placeholder="Municipality" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="municipalityId" />
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label class="control-label" for="cityId">City<span class="boldred">*</span></label>
+                      <input type="text" class="form-control" name="city" maxlength="40" value="" placeholder="City" onchange="javascript:this.value=this.value.toUpperCase()" id="municipalityId" />
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+                    <div class="form-group col-md-4">
+                      <label class="control-label" for="zipCodeId">Postal (Zip) Code</label>
+                      <input type="text" class="form-control" name="zipCodeId" maxlength="5" placeholder="Postal Code" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="zipCodeId" />
+                    </div>
+
+                    <div class="form-group col-md-4">
+                      <label class="control-label" for="NeigborhoodId">Neigborhood<span class="boldred">*</span></label>
+                      <input type="text" class="form-control" name="Neigborhood" maxlength="40" placeholder="Neigborhood" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="NeigborhoodId" />
+                    </div>
+
+                    <div class="form-group col-md-4">
+                      <label class="control-label" for="CountryId">Country<span class="boldred">*</span></label>
+                      <input type="text" class="form-control" name="Country" maxlength="40" value="Mexico" placeholder="Country" onchange="javascript:this.value=this.value.toUpperCase()" id="CountryId" />
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+              </div>
+              <!-- row end -->
+            </div>
+          </div>
+
+          <!-- Billing Address -->
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <strong class="panel-title">
+				    <a class="accordion-toggle" data-toggle="collapse" href="#/newCreditApp#billingAddresssId">Billing Address</a>					
+				  </strong>
+              <span class="small">Click here to change address</span>
+            </div>
+
+            <div id="billingAddresssId" class="panel-collapse collapse">
+              <div class="panel-body">
+
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label class="control-label" for="addressLine1Id">Address Line 1<span class="boldred">*</span></label>
+                    <input type="text" class="form-control" name="addressLine1" placeholder="Address Line 1" maxlength="100" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="addressLine1Id" />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="control-label" for="extStNumId">External Street Number<span class="boldred">*</span></label>
+                    <input type="text" class="form-control" name="extStNum" maxlength="25" placeholder="Building Number" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="extStNumId" />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="control-label" for="intStNumId">Internal Street Number</label>
+                    <input type="text" class="form-control" name="intStNum" maxlength="25" placeholder="Apartment, Suite Numbers" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="intStNumId" />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label class="control-label" for="addressLine2Id">Address Line 2</label>
+                    <input type="text" class="form-control" name="addressLine2" maxlength="40" placeholder="Address Line 2" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="addressLine2Id" />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="control-label" for="municipalityId">Municipality<span class="boldred">*</span></label>
+                    <input type="text" class="form-control" name="municipality" maxlength="40" placeholder="Municipality" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="municipalityId" />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="control-label" for="cityId">City<span class="boldred">*</span></label>
+                    <input type="text" class="form-control" name="city" maxlength="40" value="" placeholder="City" onchange="javascript:this.value=this.value.toUpperCase()" id="municipalityId" />
+                  </div>
+
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-4">
+                    <label class="control-label" for="zipCodeId">Postal (Zip) Code</label>
+                    <input type="text" class="form-control" name="zipCodeId" maxlength="5" placeholder="Postal Code" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="zipCodeId" />
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label class="control-label" for="NeigborhoodId">Neigborhood<span class="boldred">*</span></label>
+                    <input type="text" class="form-control" name="Neigborhood" maxlength="40" placeholder="Neigborhood" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="NeigborhoodId" />
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label class="control-label" for="CountryId">Country<span class="boldred">*</span></label>
+                    <input type="text" class="form-control" name="Country" maxlength="40" value="Mexico" placeholder="Country" onchange="javascript:this.value=this.value.toUpperCase()" id="CountryId" />
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- end of panel body -->
+            </div>
+
+
+          </div>
+          <!-- end of Billing Address -->
+
+          <!--  Taxation Address -->
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <strong class="panel-title">
+				    <a class="accordion-toggle" data-toggle="collapse" href="#/newCreditApp#taxationAddressId">Taxation Address</a>					
+				  </strong>
+              <span class="small">Click here to change address</span>
+            </div>
+
+            <div id="taxationAddressId" class="panel-collapse collapse">
+              <div class="panel-body">
+
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label class="control-label" for="addressLine1Id">Address Line 1<span class="boldred">*</span></label>
+                    <input type="text" class="form-control" name="addressLine1" placeholder="Address Line 1" maxlength="100" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="addressLine1Id" />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="control-label" for="extStNumId">External Street Number<span class="boldred">*</span></label>
+                    <input type="text" class="form-control" name="extStNum" maxlength="25" placeholder="Building Number" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="extStNumId" />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="control-label" for="intStNumId">Internal Street Number</label>
+                    <input type="text" class="form-control" name="intStNum" maxlength="25" placeholder="Apartment, Suite Numbers" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="intStNumId" />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label class="control-label" for="addressLine2Id">Address Line 2</label>
+                    <input type="text" class="form-control" name="addressLine2" maxlength="40" placeholder="Address Line 2" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="addressLine2Id" />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="control-label" for="municipalityId">Municipality<span class="boldred">*</span></label>
+                    <input type="text" class="form-control" name="municipality" maxlength="40" placeholder="Municipality" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="municipalityId" />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="control-label" for="cityId">City<span class="boldred">*</span></label>
+                    <input type="text" class="form-control" name="city" maxlength="40" value="" placeholder="City" onchange="javascript:this.value=this.value.toUpperCase()" id="municipalityId" />
+                  </div>
+
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-4">
+                    <label class="control-label" for="zipCodeId">Postal (Zip) Code</label>
+                    <input type="text" class="form-control" name="zipCodeId" maxlength="5" placeholder="Postal Code" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="zipCodeId" />
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label class="control-label" for="NeigborhoodId">Neigborhood<span class="boldred">*</span></label>
+                    <input type="text" class="form-control" name="Neigborhood" maxlength="40" placeholder="Neigborhood" value="" onchange="javascript:this.value=this.value.toUpperCase()" id="NeigborhoodId" />
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label class="control-label" for="CountryId">Country<span class="boldred">*</span></label>
+                    <input type="text" class="form-control" name="Country" maxlength="40" value="Mexico" placeholder="Country" onchange="javascript:this.value=this.value.toUpperCase()" id="CountryId" />
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- end of Taxation Address -->
+
+
+          <!-- end of Address Data -- info -->
+
+        </div>
+        <ul class="list-inline pull-right">
+          <li>
+            <button type="button" class="btn btn-default prev-step">Previous</button>
+          </li>
+          <li><a href="#/home" class="btn btn-default">Cancel</a></li>
+          <li>
+            <button type="button" class="btn btn-primary next-step">Save and continue</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab-pane" role="tabpanel" id="step3">
+
+        <div id="step3NewCreditApp">
+
+          <!-- Supporting Document Data -->
+          <div class="panel panel-primary">
+            <div class="panel-heading"> <strong class="panel-title">SUPPORTING DOCUMENTS</strong></div>
+            <div class="panel-body">
+
+              <div class="row">
+                <div class="col-md-12">
+
+                  <div class="panel panel-warning box-shadow--4dp">
+                    <div class="panel-heading">
+                      <strong class="panel-title">
+			  <a class="accordion-toggle" data-toggle="collapse" href="#/newCreditApp#bureauConsentDivId">Bureau Consent</a>
+			</strong>
+                      <span class="small pull-right">Add bureau consent docoment details&nbsp;</span>
+                    </div>
+
+                    <div id="bureauConsentDivId" class="panel-collapse collapse in">
+                      <div class="panel-body" style="background-color: #ffffff;">
+
+
+                        <div class="row">
+                          <div class="form-group col-md-12">
+
+                            <div class="row">
+                              <div class="form-group col-md-3">
+                                <label class="control-label" for="dateOnConsentFormID">Date on the Consent Form<span class="boldred">*</span></label>
+                                <input type="tel" class="form-control" name="dateOnConsentForm" id="dateOnConsentFormID" maxlength="8" placeholder="DDMMYYYY" />
+                              </div>
+
+                              <div class="form-group col-md-9">
+                                <label class="control-label" for="rfcOnConsentFormID">RFC# on the Consent Form<span class="boldred">*</span></label>
+                                <input type="text" class="form-control" name="rfcOnConsentForm" id="rfcOnConsentFormID" maxlength="13" placeholder="Enter RFC # on the conset form should be same with the one on the application." title="RFC # on the conset form should be same with the one on the application." />
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-md-12">
+                                <label class="control-label" for="bureauConsentFormScannedDocumentID">Bureau Consent Form - Scanned Document</label>
+                                <input type="file" name="img[]" class="file">
+                                <div class="input-group col-xs-12">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                                  <input type="text" class="form-control" disabled placeholder="Upload Image or PDF file">
+                                  <span class="input-group-btn">
+					<button class="browse btn btn-primary" id="bureauConsentFormScannedDocumentID" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
+				  </span>
+                                </div>
+                              </div>
+                              <!-- 
+				<div class="form-group col-md-12">
+					<input type="file" name="img[]" class="file">
+					<div class="input-group col-xs-12">
+					  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+					  <input type="text" class="form-control input-lg" disabled placeholder="Upload Image">
+					  <span class="input-group-btn">
+						<button class="browse btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
+					  </span>
+					</div>
+				</div>
+			    <div class="form-group col-md-12">
+					<input type="file" name="img[]" class="file">
+					<div class="input-group col-xs-12">
+					  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+					  <input type="text" class="form-control input-lg" disabled placeholder="Upload Image">
+					  <span class="input-group-btn">
+						<button class="browse btn btn-primary input-lg" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
+					  </span>
+					</div>
+				</div>
+				 -->
+                            </div>
+
+                            <div class="row">
+                              <div class="col-md-12">
+                                <hr class="orStyle" />
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-md-12">
+                                <label class="control-label" for="consentFormDocumentURLID">Bureau Consent Form - Document URL</label>
+                                <div class="input-group col-xs-12">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
+                                  <input type="url" name="consentFormDocumentURL" id="consentFormDocumentURLID" class="form-control" placeholder="document url">
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <!-- end of row -->
+                      </div>
+                      <!-- end of panel-body -->
+                    </div>
+                    <!-- end of bureauConsentDivId -->
+                  </div>
+                  <!-- end of panel panel-warning -->
+                </div>
+                <!-- end of col-md-12 -->
+              </div>
+              <!-- end of row -->
+
+              <div class="row">
+                <div class="col-md-12">
+
+                  <div class="panel panel-warning box-shadow--4dp">
+                    <div class="panel-heading">
+                      <strong class="panel-title">
+			  <a class="accordion-toggle" data-toggle="collapse" href="#/newCreditApp#identificationDocDivId">Identification Documents</a>
+			</strong>
+                      <span class="small pull-right">Add identification docoment details&nbsp;</span>
+                    </div>
+
+                    <div id="identificationDocDivId" class="panel-collapse collapse in">
+                      <div class="panel-body" style="background-color: #ffffff;">
+
+                        <div class="row">
+                          <div class="form-group col-md-12">
+
+                            <div class="row">
+                              <div class="form-group col-md-3">
+                                <label class="control-label" for="idTypeID">ID Type<span class="boldred">*</span></label>
+                                <select name="idType" id="idTypeID" class="form-control">
+                                  <option value="" selected="selected">--Select--</option>
+                                  <option value="INE">Instituto Nacional Electoral</option>
+                                  <option value="DLN">Driver License</option>
+                                  <option value="PPT">Passport</option>
+                                  <option value="PFL">Professional License with Photo</option>
+                                  <option value="FM2">FM2 ID</option>
+                                  <option value="FM3">FM3 ID</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group col-md-3">
+                                <label class="control-label" for="ownershipOfTheID">Ownership of the ID<span class="boldred">*</span></label>
+                                <select name="ownershipOfTheID" id="ownershipOfTheID" class="form-control">
+                                  <option value="" selected="selected">--Select--</option>
+                                  <option value="O">Owner of the account</option>
+                                  <option value="A">Authorized User</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group col-md-2">
+                                <label class="control-label" for="idNumberID">ID Number<span class="boldred">*</span></label>
+                                <input type="text" class="form-control" name="idNumber" id="idNumberID" maxlength="25" placeholder="Enter The actual numbers of the ID" title="The actual numbers of the ID." />
+                              </div>
+
+                              <div class="form-group col-md-2">
+                                <label class="control-label" for="idIssueDateID">Issue Date</label>
+                                <input type="tel" class="form-control" name="idIssueDate" id="idIssueDateID" placeholder="DDMMYYYY" />
+                              </div>
+
+                              <div class="form-group col-md-2">
+                                <label class="control-label" for="idExpirationDateID">Expiration Date</label>
+                                <input type="tel" class="form-control" name="idExpirationDate" id="idExpirationDateID" placeholder="DDMMYYYY" />
+                              </div>
+
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-md-6">
+                                <label class="control-label" for="scannerIDCheckIndicatorID">Scanner ID Check Indicator<span class="text-danger">*</span></label>
+                                <!--<select name="scannerIDCheckIndicator" id="scannerIDCheckIndicatorID" class="form-control">
+				  <option value="" selected="selected">--Select--</option>
+				   <option value="P">Passed</option>
+					<option value="F">Failed</option>
+					<option value="O">Scanner Outage</option>
+					<option value="N">Not Applicable</option>
+				</select> -->
+                                <!--
+				<button type="button" class="btn btn-default" ng-class="{'btn-default':!isActivePROD,  'btn-success':isActivePROD}" ng-click="reload('PROD')">SHOW PRODUCTION 
+				  <i ng-class="isActivePROD == false ?'glyphicon glyphicon-unchecked':'glyphicon glyphicon-ok'" class="glyphicon glyphicon-unchecked"></i>
+				</button>
+				-->
+                                <div class="input-group" id="scannerIDCheckIndicatorID">
+                                  <div id="radioBtn" class="btn-group">
+                                    <a class="btn btn-default" data-toggle="scannerIDCheckIndicator" data-title="Y" title="Scanner Validation Available"> Yes </a>
+                                    <a class="btn btn-default" data-toggle="scannerIDCheckIndicator" data-title="N" title="Scanner Validation NOT Available"> No </a>
+                                  </div>
+                                  <input type="hidden" name="scannerIDCheckIndicator" id="scannerIDCheckIndicator">
+                                </div>
+                                <!--
+				<div id="radioBtn" class="btn-group" data-toggle="buttons">
+				  <label class="btn btn-success active">
+					<input type="radio" autocomplete="off" value="P" checked> Passed
+				  </label>
+				  <label class="btn btn-default">
+					<input type="radio" autocomplete="off" value="F"> Failed
+				  </label>
+				  <label class="btn btn-default">
+					<input type="radio" autocomplete="off" value="O"> Scanner Outage
+				  </label>
+				  <label class="btn btn-default">
+					<input type="radio" autocomplete="off" value="N"> Not Applicable
+				  </label>
+				</div> -->
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                <label class="control-label" for="externalIDCheckIndicatorID">External ID Check Indicator<span class="boldred">*</span></label>
+                                <!--<select name="externalIDCheckIndicator" id="externalIDCheckIndicatorID" class="form-control">
+				  <option value="" selected="selected">--Select--</option>
+				   <option value="P">Passed</option>
+					<option value="F">Failed</option>
+					<option value="O">Scanner Outage</option>
+					<option value="N">Not Applicable</option>
+				</select> -->
+                                <!--
+				<div class="btn-group" data-toggle="buttons">
+				  <label class="btn btn-success active">
+					<input type="radio" autocomplete="off" value="P" checked> Passed
+				  </label>
+				  <label class="btn btn-default">
+					<input type="radio" autocomplete="off" value="F"> Failed
+				  </label>
+				  <label class="btn btn-default">
+					<input type="radio" autocomplete="off" value="O"> Scanner Outage
+				  </label>
+				  <label class="btn btn-default">
+					<input type="radio" autocomplete="off" value="N"> Not Applicable
+				  </label>
+				</div> -->
+
+                                <div class="input-group" id="externalIDCheckIndicatorID">
+                                  <div id="radioBtn" class="btn-group">
+                                    <a class="btn btn-default" data-toggle="externalIDCheckIndicator" data-title="P"> Passed </a>
+                                    <a class="btn btn-default" data-toggle="externalIDCheckIndicator" data-title="F"> Failed </a>
+                                    <a class="btn btn-default" data-toggle="externalIDCheckIndicator" data-title="O"> External Site Outage </a>
+                                    <a class="btn btn-default" data-toggle="externalIDCheckIndicator" data-title="N"> Not Applicable </a>
+                                  </div>
+                                  <input type="hidden" name="externalIDCheckIndicator" id="externalIDCheckIndicator">
+                                </div>
+                              </div>
+
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-md-12">
+                                <label class="control-label" for="idProofScannedDocumentID">ID Proof - Scanned Document</label>
+                                <input type="file" name="img[]" class="file">
+                                <div class="input-group col-xs-12">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                                  <input type="text" class="form-control" disabled placeholder="Upload Image or PDF file">
+                                  <span class="input-group-btn">
+					<button class="browse btn btn-primary" id="idProofScannedDocumentID" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
+				  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <hr class="orStyle" />
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-md-12">
+                                <label class="control-label" for="idProofDocumentURLID">ID Proof - Document URL</label>
+                                <div class="input-group col-xs-12">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
+                                  <input type="url" name="idProofDocumentURL" id="idProofDocumentURLID" class="form-control" placeholder="document url" maxlength="250">
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <!-- end of row -->
+                      </div>
+                      <!-- end of panel-body -->
+                    </div>
+                    <!-- end of identificationDocDivId -->
+                  </div>
+                  <!-- end of panel panel-warning -->
+                </div>
+                <!-- end of col-md-12 -->
+              </div>
+              <!-- end of row -->
+
+              <div class="row">
+                <div class="col-md-12">
+
+                  <div class="panel panel-warning box-shadow--4dp">
+                    <div class="panel-heading">
+                      <strong class="panel-title">
+			  <a class="accordion-toggle" data-toggle="collapse" href="#/newCreditApp#addressProofDocDivId">Address Proof Documents</a>
+			</strong>
+                      <span class="small pull-right">Add address proof docoment details&nbsp;</span>
+                    </div>
+
+                    <div id="addressProofDocDivId" class="panel-collapse collapse in">
+                      <div class="panel-body" style="background-color: #ffffff;">
+
+                        <div class="row">
+                          <div class="form-group col-md-12">
+
+                            <div class="row">
+                              <div class="form-group col-md-4">
+                                <label class="control-label" for="idTypeID">Address Proof Document Type<span class="boldred">*</span></label>
+                                <select name="idType" id="idTypeID" class="form-control">
+                                  <option value="" selected="selected">--Select--</option>
+                                  <option value="WB">Water Bill</option>
+                                  <option value="LB">Light Bill</option>
+                                  <option value="GB">Gas Bill</option>
+                                  <option value="EB">Electricity Bill</option>
+                                  <option value="OTH">Other Type</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group col-md-4">
+                                <label class="control-label" for="addressProofIssueDateID">Issue Date</label>
+                                <input type="tel" class="form-control" name="addressProofIssueDate" id="addressProofIssueDateID" placeholder="DDMMYYYY" />
+                              </div>
+
+                              <div class="form-group col-md-4">
+                                <label class="control-label" for="addressProofExpirationDateID">Expiration Date</label>
+                                <input type="tel" class="form-control" name="addressProofExpirationDate" id="addressProofExpirationDateID" placeholder="DDMMYYYY" />
+                              </div>
+
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-md-12">
+                                <label class="control-label" for="addressProofScannedDocumentID">Address Proof - Scanned Document</label>
+                                <input type="file" name="img[]" class="file">
+                                <div class="input-group col-xs-12">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                                  <input type="text" class="form-control" disabled placeholder="Upload Image or PDF file">
+                                  <span class="input-group-btn">
+					<button class="browse btn btn-primary" id="addressProofScannedDocumentID" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
+				  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <hr class="orStyle" />
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-md-12">
+                                <label class="control-label" for="addressProofDocumentURLID">Address Proof - Document URL</label>
+                                <div class="input-group col-xs-12">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
+                                  <input type="url" name="addressProofDocumentURL" id="addressProofDocumentURLID" class="form-control" placeholder="document url" maxlength="250">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end of row -->
+                      </div>
+                      <!-- end of panel-body -->
+                    </div>
+                    <!-- end of addressProofDocDivId -->
+                  </div>
+                  <!-- end of panel panel-warning -->
+                </div>
+                <!-- end of col-md-12 -->
+              </div>
+              <!-- end of row -->
+
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="panel panel-warning box-shadow--4dp">
+                    <div class="panel-heading">
+                      <strong class="panel-title">
+			  <a class="accordion-toggle" data-toggle="collapse" href="#/newCreditApp#incomeProofDivId">Income Proof</a>
+			</strong>
+                      <span class="small pull-right">Click here to add income proof details</span>
+                    </div>
+
+                    <div id="incomeProofDivId" class="panel-collapse collapse">
+                      <div class="panel-body" style="background-color: #ffffff;">
+
+                        <div class="row">
+                          <div class="form-group col-md-12">
+                            <div class="row">
+                              <div class="form-group col-md-4">
+                                <label class="control-label" for="idTypeID">Income Proof Docoment Type<span class="boldred">*</span></label>
+                                <select name="idType" id="idTypeID" class="form-control">
+                                  <option value="" selected="selected">--Select--</option>
+                                  <option value="IAD">Income Approval Document</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group col-md-4">
+                                <label class="control-label" for="incomeProofIssueDateID">Issue Date</label>
+                                <input type="tel" class="form-control" name="incomeProofIssueDate" id="addressProofIssueDateID" placeholder="DDMMYYYY" />
+                              </div>
+
+                              <div class="form-group col-md-4">
+                                <label class="control-label" for="incomeProofExpirationDateID">Expiration Date</label>
+                                <input type="tel" class="form-control" name="incomeProofExpirationDate" id="addressProofExpirationDateID" placeholder="DDMMYYYY" />
+                              </div>
+
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-md-12">
+                                <label class="control-label" for="addressProofScannedDocumentID">Income Proof - Scanned Document</label>
+                                <input type="file" name="img[]" class="file">
+                                <div class="input-group col-xs-12">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                                  <input type="text" class="form-control" disabled placeholder="Upload Image or PDF file">
+                                  <span class="input-group-btn">
+					<button class="browse btn btn-primary" id="incomeProofScannedDocumentID" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
+				  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <hr class="orStyle" />
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-md-12">
+                                <label class="control-label" for="addressProofDocumentURLID">Income Proof - Document URL</label>
+                                <div class="input-group col-xs-12">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
+                                  <input type="url" name="incomeProofDocumentURL" id="incomeProofDocumentURLID" class="form-control" placeholder="document url" maxlength="250">
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <!-- end of row -->
+
+                      </div>
+                      <!-- end of panel-body -->
+                    </div>
+                    <!-- end of incomeProofDivId -->
+                  </div>
+                  <!-- end of panel panel-warning -->
+                </div>
+              </div>
+              <!-- end of row -->
+
+              <div class="row">
+
+                <div class="col-md-12">
+
+                  <div class="panel panel-warning box-shadow--4dp">
+                    <div class="panel-heading">
+                      <strong class="panel-title">
+			  <a class="accordion-toggle" data-toggle="collapse" href="#/newCreditApp#subIdentificationDocumentDivId">Sub Identification</a>
+			</strong>
+                      <span class="small pull-right">Click here to add sub identification document details</span>
+                    </div>
+
+                    <div id="subIdentificationDocumentDivId" class="panel-collapse collapse">
+                      <div class="panel-body" style="background-color: #ffffff;">
+
+                        <div class="row">
+
+                          <div class="form-group col-md-12">
+
+                            <div class="row">
+                              <div class="form-group col-md-6">
+                                <label class="control-label" for="subIdentificationDocumentIndicatorID">Sub Identification Document Indicator<span class="boldred">*</span></label>
+                                <select name="subIdentificationDocumentIndicator" id="subIdentificationDocumentIndicatorID" class="form-control">
+                                  <option value="" selected="selected">--Select--</option>
+                                  <option value="Y">Yes Provided</option>
+                                  <option value="N">Not Provided</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                <label class="control-label" for="subIdentificationDocumentTypeID">Sub Identification Document Type<span class="boldred">*</span></label>
+                                <input type="text" name="subIdentificationDocumentType" id="subIdentificationDocumentTypeID" placeholder="Student ID, Employee ID, Military ID etc" class="form-control" />
+
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-md-6">
+                                <label class="control-label" for="subIdentificationIssueDateID">Issue Date</label>
+                                <input type="tel" class="form-control" name="subIdentificationIssueDateID" id="addressProofIssueDateID" placeholder="DDMMYYYY" />
+                              </div>
+
+                              <div class="form-group col-md-6">
+                                <label class="control-label" for="subIdentificationExpirationDateID">Expiration Date</label>
+                                <input type="tel" class="form-control" name="subIdentificationExpirationDate" id="subIdentificationExpirationDateID" placeholder="DDMMYYYY" />
+                              </div>
+
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-md-12">
+                                <label class="control-label" for="subIdentificationDocumentScannedDocumentID">Sub Identification Document - Scanned Document</label>
+                                <input type="file" name="img[]" class="file">
+                                <div class="input-group col-xs-12">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                                  <input type="text" class="form-control" disabled placeholder="Upload Image or PDF file">
+                                  <span class="input-group-btn">
+					<button class="browse btn btn-primary" id="subIdentificationDocumentScannedDocumentID" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
+				  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <hr class="orStyle" />
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-md-12">
+                                <label class="control-label" for="subIdentificationDocumentURLID">Sub Identification - Document URL</label>
+                                <div class="input-group col-xs-12">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
+                                  <input type="url" name="incomeProofDocumentURL" id="subIdentificationDocumentURLID" class="form-control" placeholder="document url" maxlength="250">
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <!-- end of row -->
+
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <!-- end of col-md-12 -->
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-12">
+
+                  <div class="panel panel-warning box-shadow--4dp">
+                    <div class="panel-heading">
+                      <strong class="panel-title">
+			  <a class="accordion-toggle" data-toggle="collapse" href="#/newCreditApp#articleOfIncorporationDivId">Article of Incorporation</a>
+			</strong>
+                      <span class="small pull-right">Add article of incorporation document details</span>
+                    </div>
+
+                    <div id="articleOfIncorporationDivId" class="panel-collapse collapse in">
+                      <div class="panel-body" style="background-color: #ffffff;">
+
+                        <div class="row">
+                          <div class="form-group col-md-12">
+
+                            <div class="row">
+                              <div class="form-group col-md-6">
+                                <label class="control-label" for="articleOfIncorporationDocomentTypeID">Article of Incorporation Docoment Type<span class="boldred">*</span></label>
+                                <input type="text" name="articleOfIncorporationDocomentType" id="articleOfIncorporationDocomentTypeID" class="form-control" />
+                              </div>
+
+                              <div class="form-group col-md-3">
+                                <label class="control-label" for="articleOfIncorporationIssueDateID">Issue Date</label>
+                                <input type="tel" class="form-control" name="articleOfIncorporationIssueDate" id="articleOfIncorporationIssueDateID" placeholder="DDMMYYYY" />
+                              </div>
+
+                              <div class="form-group col-md-3">
+                                <label class="control-label" for="articleOfIncorporationExpirationDateID">Expiration Date</label>
+                                <input type="tel" class="form-control" name="articleOfIncorporationExpirationDate" id="articleOfIncorporationExpirationDateID" placeholder="DDMMYYYY" />
+                              </div>
+
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-md-12">
+                                <label class="control-label" for="articleOfIncorporationID">Article Of Incorporation - Scanned Document</label>
+                                <input type="file" name="img[]" class="file">
+                                <div class="input-group col-xs-12">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                                  <input type="text" class="form-control" disabled placeholder="Upload Image or PDF file">
+                                  <span class="input-group-btn">
+					<button class="browse btn btn-primary" id="articleOfIncorporationID" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
+				  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <hr class="orStyle" />
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-md-12">
+                                <label class="control-label" for="subIdentificationDocumentURLID">Article Of Incorporation - Document URL</label>
+                                <div class="input-group col-xs-12">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
+                                  <input type="url" name="incomeProofDocumentURL" id="articleOfIncorporationDocumentURLID" class="form-control" placeholder="document url" maxlength="250">
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <!-- end of row -->
+                      </div>
+                      <!-- end of panel-body -->
+                    </div>
+                    <!-- end of articleOfIncorporationDivId -->
+                  </div>
+                  <!-- end of panel panel-warning -->
+                </div>
+                <!-- end of col-md-12 -->
+              </div>
+              <!-- end of row -->
+
+              <!-- Donor Information -->
+              <div class="row">
+                <div class="col-md-12">
+
+                  <div class="panel panel-warning box-shadow--4dp">
+                    <div class="panel-heading">
+                      <strong class="panel-title">
+			  <a class="accordion-toggle" data-toggle="collapse" href="#/newCreditApp#donorInformationFormDivId">Donor Information</a>
+			</strong>
+                      <span class="small pull-right">Click here to add article of donor information document details</span>
+                    </div>
+
+                    <div id="donorInformationFormDivId" class="panel-collapse collapse">
+                      <div class="panel-body" style="background-color: #ffffff;">
+
+                        <div class="row">
+                          <div class="form-group col-md-12">
+
+                            <div class="row">
+                              <div class="form-group col-md-12">
+                                <label class="control-label" for="signedDateOftheDonorInformationFormID">Signed Date of the Donor Information Form</label>
+                                <input type="tel" class="form-control" name="signedDateOftheDonorInformationForm" id="signedDateOftheDonorInformationFormID" placeholder="DDMMYYYY" />
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-md-12">
+                                <label class="control-label" for="articleOfIncorporationID">Donor Information Form - Scanned Document</label>
+                                <input type="file" name="img[]" class="file">
+                                <div class="input-group col-xs-12">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                                  <input type="text" class="form-control" disabled placeholder="Upload Image or PDF file">
+                                  <span class="input-group-btn">
+					<button class="browse btn btn-primary" id="donorInformationFormID" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button>
+				  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <hr class="orStyle" />
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-md-12">
+                                <label class="control-label" for="donorInformationFormDocumentURLID">Donor Information Form - Document URL</label>
+                                <div class="input-group col-xs-12">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
+                                  <input type="url" name="donorInformationFormDocumentURL" id="donorInformationFormDocumentURLID" class="form-control" placeholder="document url" maxlength="250">
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <!-- end of row -->
+                      </div>
+                      <!-- end of panel-body -->
+                    </div>
+                    <!-- end of donorInformationFormDivId -->
+                  </div>
+                  <!-- end of panel panel-warning -->
+                </div>
+                <!-- end of col-md-12 -->
+              </div>
+              <!-- end of row -->
+              <!-- Donor Information -->
+
+              <!-- Executive ID (Authenticity Format) Information -->
+              <div class="row">
+                <div class="col-md-12">
+
+                  <div class="panel panel-warning box-shadow--4dp">
+                    <div class="panel-heading">
+                      <strong class="panel-title">
+			  <a class="accordion-toggle" data-toggle="collapse" href="#/newCreditApp#executiveIDFormDivId">Executive ID Forms</a>
+			</strong>
+                      <span class="small pull-right">Click here to add Executive ID (Authenticity Format) information document details</span>
+                    </div>
+
+                    <div id="executiveIDFormDivId" class="panel-collapse collapse">
+                      <div class="panel-body" style="background-color: #ffffff;">
+
+                        <div class="row">
+                          <div class="form-group col-md-4">
+                            <label class="control-label" for="executiveIdNumberID">Id Number</label>
+                            <input type="text" class="form-control" name="executiveIdNumber" id="executiveIdNumberID" placeholder="Id Number" maxlength="30" />
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label class="control-label" for="executiveIDIssueDateFormID">Issue Date</label>
+                            <input type="tel" class="form-control" name="executiveIDIssueDate" id="executiveIDIssueDateFormID" placeholder="The issue date of the Executive ID - DDMMYYYY" />
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label class="control-label" for="executiveExpirationDateID">Expiration Date</label>
+                            <input type="tel" class="form-control" name="executiveExpirationDate" id="executiveExpirationDateID" placeholder="The expiration date of Executive ID - DDMMYYYY" />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label" for="executiveIDScanDocFormID">Executive ID - Scanned Document</label>
+                          <input type="file" name="img[]" class="file">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                            <input type="text" class="form-control" disabled placeholder="Upload Image or PDF file">
+                            <span class="input-group-btn"><button class="browse btn btn-primary" id="executiveIDScanDocFormID" type="button"><i class="glyphicon glyphicon-search"></i> Browse</button></span>
+                          </div>
+                        </div>
+                        <hr class="orStyle" />
+                        <div class="form-group">
+                          <label class="control-label" for="executiveIDDocumentURLID">Executive ID - Document URL</label>
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
+                            <input type="url" name="donorInformationFormDocumentURL" id="executiveIDDocumentURLID" class="form-control" placeholder="document url" maxlength="250">
+                          </div>
+                        </div>
+                        <!-- end of row -->
+                      </div>
+                      <!-- end of panel-body -->
+                    </div>
+                    <!-- end of executiveIDFormDivId -->
+                  </div>
+                  <!-- end of panel panel-warning -->
+                </div>
+                <!-- end of col-md-12 -->
+              </div>
+              <!-- end of row -->
+              <!-- Executive ID (Authenticity Format) Information -->
+
+            </div>
+            <!-- end of panel-body -->
+          </div>
+          <!-- end of panel -->
+          <!-- end of Supporting Document Data -->
+
+        </div>
+        <ul class="list-inline pull-right">
+          <li>
+            <button type="button" class="btn btn-default prev-step">Previous</button>
+          </li>
+          <li><a href="#/home" class="btn btn-default">Cancel</a></li>
+          <li>
+            <button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab-pane" role="tabpanel" id="step4">
+        <div id="step4NewCreditApp">
+
+          <div class="panel panel-primary">
+            <div class="panel-heading clearfix">
+              <strong class="panel-title">Contact Information</strong>
+              <small class="pull-right">Primary contact of the account(customer) who is responsbile financially on the account.</small>
+            </div>
+            <div class="panel-body">
+
+              <div class="row">
+
+                <div class="form-group col-md-4">
+                  <label class="control-label" for="contactPhoneId">Phone Number</label>
+                  <div class="control-group">
+                    <div class="controls">
+                      <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                        <input type="tel" class="form-control" name="contactPhone" id="contactPhoneId" placeholder="Enter Contact phone number">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group col-md-4">
+                  <label class="control-label" for="emailId">Email Address</label>
+                  <div class="control-group">
+                    <div class="controls">
+                      <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input type="email" class="form-control" name="emailAddress" id="emailId" placeholder="Enter Contact email address">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group col-md-4">
+                  <label class="control-label" for="altContactPhoneId">Alternative Phone Number</label>
+                  <div class="control-group">
+                    <div class="controls">
+                      <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                        <input type="tel" class="form-control" name="altContactPhone" id="altContactPhoneId" placeholder="Enter alternative contact phone number" maxlength="11">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- end of panel-body -->
+          </div>
+
+          <!-- REFERENCE CONTACT INFORMATION - Cntact# 1 -->
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <strong class="panel-title">
+			    <a class="accordion-toggle" data-toggle="collapse" href="#/newCreditApp#refContact1InfoDivId">Reference Contact# 1</a>					
+				</strong>
+              <span class="small pull-right">Click here to add reference contact information&nbsp;</span>
+            </div>
+
+            <div id="refContact1InfoDivId" class="panel-collapse collapse in">
+              <div class="panel-body">
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label class="control-label" for="refFullNameID">First Name</label>
+                    <input type='text' class="form-control" name="refFirstName" id="refFullNameID" placeholder="Enter reference person first name" maxlength="60" />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="control-label" for="refMiddleNameID">Middle Name</label>
+                    <input type='text' class="form-control" name="refMiddleName" id="refMiddleNameID" placeholder="Enter reference person middle name" maxlength="60" />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label class="control-label" for="refFirstLegalLastNameID">First Legal Last Name</label>
+                    <input type='text' class="form-control" name="refFirstLegalLastName" id="refFirstLegalLastNameID" placeholder="Enter reference person first legal last name" maxlength="60" />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="control-label" for="refSecondLegalLastNameID">Second Legal Last Name</label>
+                    <input type='text' class="form-control" name="refSecondLegalLastName" id="refSecondLegalLastNameID" placeholder="Enter reference person second legal last name" maxlength="60" />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-4">
+                    <label class="control-label" for="relationshipWithTheCustomerID">Relationship with the customer</label>
+                    <select name="relationshipWithTheCustomer" id="relationshipWithTheCustomerID" class="form-control">
+                      <option value="" selected="selected">--Select--</option>
+                      <option value="FR">Friend</option>
+                      <option value="NB">Neighbor</option>
+                      <option value="FM">Family Member</option>
+                      <option value="RT">Relative</option>
+                      <option value="OT">Other</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label class="control-label" for="contactPhoneNumberID">Contact Phone Number</label>
+                    <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                      <input type='tel' class="form-control" name="contactPhoneNumber" id="contactPhoneNumberID" placeholder="Phone number of the reference person" maxlength="11" />
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label class="control-label" for="contactIdentifierID">Contact Identifier</label>
+                    <select name="contactIdentifier" id="contactIdentifierID" class="form-control">
+                      <option value="" selected="selected">--Select--</option>
+                      <option value="HOME">HOME</option>
+                      <option value="CELL">CELL</option>
+                      <option value="WORK">WORK</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+              <!-- end of panel body -->
+            </div>
+          </div>
+          <!-- end of REFERENCE CONTACT INFORMATION - Cntact# 1 -->
+
+          <!-- REFERENCE CONTACT INFORMATION - Cntact# 2 -->
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <strong class="panel-title">
+			    <a class="accordion-toggle" data-toggle="collapse" href="#/newCreditApp#refContact2InfoDivId">Reference Contact# 2</a>					
+				</strong>
+              <span class="small pull-right">Click here to add reference contact information&nbsp;</span>
+            </div>
+
+            <div id="refContact2InfoDivId" class="panel-collapse collapse">
+              <div class="panel-body">
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label class="control-label" for="refFullNameID">First Name</label>
+                    <input type='text' class="form-control" name="refFirstName" id="refFullNameID" placeholder="Enter reference person first name" maxlength="60" />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="control-label" for="refMiddleNameID">Middle Name</label>
+                    <input type='text' class="form-control" name="refMiddleName" id="refMiddleNameID" placeholder="Enter reference person middle name" maxlength="60" />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label class="control-label" for="refFirstLegalLastNameID">First Legal Last Name</label>
+                    <input type='text' class="form-control" name="refFirstLegalLastName" id="refFirstLegalLastNameID" placeholder="Enter reference person first legal last name" maxlength="60" />
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="control-label" for="refSecondLegalLastNameID">Second Legal Last Name</label>
+                    <input type='text' class="form-control" name="refSecondLegalLastName" id="refSecondLegalLastNameID" placeholder="Enter reference person second legal last name" maxlength="60" />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-4">
+                    <label class="control-label" for="relationshipWithTheCustomerID">Relationship with the customer</label>
+                    <select name="relationshipWithTheCustomer" id="relationshipWithTheCustomerID" class="form-control">
+                      <option value="" selected="selected">--Select--</option>
+                      <option value="FR">Friend</option>
+                      <option value="NB">Neighbor</option>
+                      <option value="FM">Family Member</option>
+                      <option value="RT">Relative</option>
+                      <option value="OT">Other</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label class="control-label" for="contactPhoneNumberID">Contact Phone Number</label>
+                    <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                      <input type='tel' class="form-control" name="contactPhoneNumber" id="contactPhoneNumberID" placeholder="Phone number of the reference person" maxlength="11" />
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label class="control-label" for="contactIdentifierID">Contact Identifier</label>
+                    <select name="contactIdentifier" id="contactIdentifierID" class="form-control">
+                      <option value="" selected="selected">--Select--</option>
+                      <option value="HOME">HOME</option>
+                      <option value="CELL">CELL</option>
+                      <option value="WORK">WORK</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+              <!-- end of panel body -->
+            </div>
+          </div>
+          <!-- end of REFERENCE CONTACT INFORMATION - Cntact# 2 -->
+
+
+        </div>
+
+        <ul class="list-inline pull-right">
+          <li>
+            <button type="button" class="btn btn-default prev-step">Previous</button>
+          </li>
+          <li><a href="#/home" class="btn btn-default">Cancel</a></li>
+          <li>
+            <button type="button" class="btn btn-default next-step">Skip</button>
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab-pane" role="tabpanel" id="complete">
+
+        <div id="step4NewCreditAppID">
+
+          <div class="panel panel-primary">
+            <div class="panel-heading"><strong class="panel-title">OUT OF WALLET QUESTIONNAIRES</strong></div>
+            <div class="panel-body">
+
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <h4 class="list-group-item-heading">Question 1</h4>
+                  <span>Will you provide authorization signature?</span>
+                  <toggle-switch ng-model="newCreditApp.oowq.q1" on-label="Yes" off-label="No" class="switch-success switch-medium"></toggle-switch>
+                </li>
+                <li class="list-group-item">
+                  <h4 class="list-group-item-heading">Question 2</h4>
+                  <span>Do you have a credit card?</span>
+                  <toggle-switch ng-model="newCreditApp.oowq.q2" on-label="Yes" off-label="No" class="switch-success switch-medium"></toggle-switch>
+                  <span ng-show="newCreditApp.oowq.q2" class="animate-show">
+                <span>Last 4 digits of primary credit card:</span>
+                  <div class="last4ccDiv">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
+                      <input type="tel" class="form-control" name="last4ccNum" ng-model="newCreditApp.userInfo.phone" id="last4ccNumID" maxlength="4" />
+                    </div>
+                  </div>
+                  </span>
+                </li>
+                <li class="list-group-item">
+                  <h4 class="list-group-item-heading">Question 3</h4>
+                  <span>Have you ever taken a mortgage on real estate?</span>
+                  <toggle-switch ng-model="newCreditApp.oowq.q3" on-label="Yes" off-label="No" class="switch-success switch-medium"></toggle-switch>
+                </li>
+                <li class="list-group-item">
+                  <h4 class="list-group-item-heading">Question 4</h4>
+                  <span>Have you had auto loans in the past 24 months?</span>
+                  <toggle-switch ng-model="newCreditApp.oowq.q4" on-label="Yes" off-label="No" class="switch-success switch-medium"></toggle-switch>
+                </li>
+
+              </ul>
+
+              <!--<div class="row">
+                <div class="form-group col-md-3">
+                  <label class="control-label" for="OOWAnsweredDateID">OOW Answered Date</label>
+                  <div class='input-group date' id='oowDatePickerId'>
+                    <input type='text' class="form-control" name="oowAnsweredDateID" id="oowAnsweredDateID" placeholder="DDMMYYYY" />
+                    <label class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span></label>
+                  </div>
+                </div>
+              </div> -->
+
+            </div>
+            <!-- end of panel-body -->
+          </div>
+          <!-- end of panel panel-primary -->
+        </div>
+        <!-- <div class="clearfix col-md-12" style="margin-top:10px;">
+						  <div class="text-right">
+							<a href="#/appSrchResultList"class="btn btn-primary">Submit</a>
+							<a href="#/searchApplication"class="btn btn-default"><span class="glyphicon glyphicon-refresh"></span> Clear</a>
+						  </div>
+						</div>
+						-->
+        <ul class="list-inline pull-right">
+          <li><a href="#/newCreditApp" class="btn btn-default"><span class="glyphicon glyphicon-refresh"></span> Clear</a></li>
+          <li><a href="#/newCreditAppResult" class="btn btn-primary">Submit</a></li>
+        </ul>
+
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </form>
+</div>
+
+
+
+
+<script>
+  function toggleChevron(e) {
+    $(e.target)
+      .prev('.panel-heading')
+      .find("i.indicator")
+      .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+  }
+  $('#accordion').on('hidden.bs.collapse', toggleChevron);
+  $('#accordion').on('shown.bs.collapse', toggleChevron);
+
+  // for file upload
+  $(document).on('click', '.browse', function () {
+    var file = $(this).parent().parent().parent().find('.file');
+    file.trigger('click');
+  });
+  $(document).on('change', '.file', function () {
+    $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+  });
+
+  /**
+   * Choice buttons -- input-group
+   * Scanner ID Check Indicator
+   * External ID Check Indicator
+   */
+  $('#radioBtn a').on('click', function () {
+    var sel = $(this).data('title');
+    var tog = $(this).data('toggle');
+    $('#' + tog).prop('value', sel);
+
+    $('a[data-toggle="' + tog + '"]').not('[data-title="' + sel + '"]').removeClass('btn-success active').addClass('btn-default');
+    $('a[data-toggle="' + tog + '"][data-title="' + sel + '"]').removeClass('btn-default').addClass('btn-success active');
+  })
+
+  // dob date picker
+  $(function () {
+    $('#dobPickerDivId').datetimepicker({
+      locale: 'es',
+      format: 'DDMMYYYY'
+    });
+  });
+
+  // oow date picker
+  $(function () {
+    $('#oowDatePickerId').datetimepicker({
+      locale: 'es',
+      format: 'DDMMYYYY'
+    });
+  });
+
+  //switch control
+
+  $(".oowSwitch").bootstrapSwitch();
+  //$("input[type=\"checkbox\"], input[type=\"radio\"]").not("[data-switch-no-init]").bootstrapSwitch();
+</script>
+
+<script>
+  $(document).ready(function () {
+    //Initialize tooltips
+    $('.nav-tabs > li a[title]').tooltip();
+
+    //Wizard
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+      var $target = $(e.target);
+
+      if ($target.parent().hasClass('disabled')) {
+        return false;
+      }
+    });
+
+    $(".next-step").click(function (e) {
+
+      var $active = $('.wizard .nav-tabs li.active');
+      $active.next().removeClass('disabled');
+      nextTab($active);
+
+    });
+    $(".prev-step").click(function (e) {
+
+      var $active = $('.wizard .nav-tabs li.active');
+      prevTab($active);
+
+    });
+  });
+
+  function nextTab(elem) {
+    $(elem).next().find('a[data-toggle="tab"]').click();
+  }
+
+  function prevTab(elem) {
+    $(elem).prev().find('a[data-toggle="tab"]').click();
+  }
+</script>
